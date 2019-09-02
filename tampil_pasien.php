@@ -50,34 +50,7 @@ filter: alpha(opacity=100);
 <body bgcolor="white">
 
 
- <?php
-        include "koneksi.php"; 
-
-        $sql = "SELECT * FROM `tampil`";
-        $data = mysqli_query($koneksi,$sql);      
-        while($tampil = mysqli_fetch_array($data)){
-
-        ?>
-           
-             <div class="header"><center><b><font color="black" size="30px">APLIKASI ANTRIAN BEROBAT</font></b></h1></center></div>
-
-            
-        <center><img src="images/logoklinik.png" height="200" width="430" style="margin-top: 0px" class="rotate"></center>
-        <center><font color="black" size="5.5px">Jalan Raya Loji Kecamatan Ciracap, Kabupaten Sukabumi, 43176</font></center>
-    
-
-            <div class="p">
-                <br><br>
-            <center><div class="header2"><br>
-                <center>
-                    <h3><font color="black" style="margin-bottom: 1px"><?php echo $tampil['keterangan']; ?></font></b></h3>
-                </center><br>
-                <center>
-                    <b><font color="black" style="margin-bottom: 1px" size="40px"><?php echo $tampil['status']; ?></font></b><br><br><br>
-                    <h3><font color="black" style="margin-bottom: 1px">NOMOR ANTRIAN YANG MASIH TERSEDIA <?php echo $tampil['nomor_tersedia']; ?> DAN SETERUSNYA</font></b></h3><br>
-                </center>
-            </div></center>
-            <br><br>
+ 
              </div>
 
     <?php } ?>
